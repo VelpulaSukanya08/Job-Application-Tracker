@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Job Application Tracker</h1>
+            <p>Track your jobs and internships in one place</p>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Total Applications</h3>
+                <p id="totalApplications">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Applied</h3>
+                <p id="appliedCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Shortlisted</h3>
+                <p id="shortlistedCount">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Selected</h3>
+                <p id="selectedCount">0</p>
+            </div>
+
+        </section>
+
+
+        <!-- Add Application -->
+        <section class="form-section">
+
+            <h2>Add New Application</h2>
+
+            <form id="applicationForm">
+
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input
+                        type="text"
+                        id="company"
+                        placeholder="Enter company name"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="role">Job / Internship Role</label>
+                    <input
+                        type="text"
+                        id="role"
+                        placeholder="Enter role"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="date">Applied Date</label>
+                    <input
+                        type="date"
+                        id="date"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="status">Application Status</label>
+
+                    <select id="status">
+
+                        <option value="Applied">
+                            Applied
+                        </option>
+
+                        <option value="Shortlisted">
+                            Shortlisted
+                        </option>
+
+                        <option value="Selected">
+                            Selected
+                        </option>
+
+                        <option value="Rejected">
+                            Rejected
+                        </option>
+
+                    </select>
+                </div>
+
+
+                <button type="submit">
+                    Add Application
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Applications -->
+        <section class="applications-section">
+
+            <div class="section-header">
+
+                <h2>My Applications</h2>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search company or role..."
+                >
+
+            </div>
+
+
+            <!-- Application List -->
+            <div id="applicationList">
+
+                <!-- Applications will appear here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Job Application Tracker | Built with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>x
